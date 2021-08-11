@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color:#7fd2e2;
+			background-image:url(https://drive.google.com/file/d/1xn8-NxHq9xmj2y0BpSmbWKizX5eL37-B/view?usp=sharing) ;
+			background-position: center;
+			background-repeat: no-repeat;
+			min-height: 100vh;
+			font-family: arial, sans-serif;
+		}
+		input, textarea {
+			display: block;
+			width: 300px;
+			font-size: 18px;
+			margin: 7px 0px;
+		}
+		label {
+			display: block;
+			padding: 2px 0px;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1><b><u>Student Database</u></b></h1>
+    <form method="POST" action="insert.php">
+
+    	<label><b>Name:</b></label>
+    	<input type="text" 
+    	       name="name"
+    	       required>
+    
+    	<label><b>Email:</b></label>
+    	<input type='email'
+			   name='email'
+			   required>
+        
+        <p>
+		
+        <label><b>Gender:</b>    
+        <input type='radio'
+				name='gender' 
+				value='m'
+				required> 
+				<i>Male</i>
+
+        <input type='radio' 
+				name='gender' 
+				value='f'
+				required> 
+				<i>Female</i>
+        </p>
+
+        <label><b> Date Of Birth:</b></label>
+        <input type='date' 
+			   name='dob'
+			   value='date'
+			   required>
+
+        <label> <b>Religion:</b> </label>
+        <select name='religion'>
+        	<option value=''>Select Religion</option>
+        	<option value='hindu'>Hindu</option>
+        	<option value='christian'>Christian</option>
+        	<option value='buddism'>Buddism</option>
+        	<option value='jainism'>Jainism</option>
+        	<option value='sikhism'>Sikhism</option>
+        	<option value='islam'>Islam</option>
+        	<option value='judaism'>Judaism</option>
+        	<option value='zoroastrianism'>Zoroastrianism</option>
+        </select>
+
+        <label for='mystate'> <b>Choose your State:</b></label>
+		
+        <input for='mystate' 
+			   placeholder="type here..."
+			   list='states' 
+			   required>
+			   
+        <datalist id='states'>
+        	<option value="Tamil Nadu">
+        	<option value="Kerala">
+        	<option value="Andra Pradesh">
+        	<option value="Karnataka">
+        	<option value="Maharatra">
+        	<option value="Gujarat">
+        	<option value="Madhya Pradesh">
+        	<option value="Chattisgarh">
+        	<option value="Jharkhand">
+        	<option value="West Bengal">
+        	<option value="Bihar">
+        	<option value="Uttar Pradesh">
+        	<option value="Hariyana">
+        	<option value="Rajasthan">
+        	<option value="Panjab">
+        	<option value="Himachal Pradesh">
+        	<option value="Jammu & Kashmir">
+        	<option value="Delhi">
+        	<option value='Uattaranchal'>
+        	<option value="Sikkim">
+        	<option value="Assam">
+        	<option value="Maghalaya">
+        	<option value="Tripura">
+        	<option value="Arunachal Pradesh">
+        	<option value="Nagaland">
+        	<option value="Manipur">
+        	<option value="Mizoram">
+        	<option value="Orissa">
+
+        </datalist>
+
+
+
+    	<input type="submit"  
+    	       name="btn"
+    	       value='Confirm'>
+
+    	<input type="reset"  
+    	       name="btn1"
+    	       value='Reset'
+    	       >
+    </form>
+</body>
