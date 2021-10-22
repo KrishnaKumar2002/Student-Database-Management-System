@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#7fd2e2;
+    background-image:url(https://projectabstracts.com/wp-content/uploads/2019/12/projectjpg.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    font-family: arial, sans-serif;
+}
+input,textarea {
+    display: block;
+    width: 300px;
+    font-size: 18px;
+    margin: 7px 0px;
+}
+label {
+    display: block;
+    padding: 2px 0px;
+}
+
+.finish:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    text-shadow: grey;
+    text-decoration-color: whitesmoke;
+}
