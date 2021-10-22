@@ -58,14 +58,6 @@ else
 	{
 	echo "All fields are required";
 	die();
-		
-	
-	
 	}
 	
-
-
-
-
-
 ?>
