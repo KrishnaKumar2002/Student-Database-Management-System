@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Example</title>
-	<style>
-		body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-color:#7fd2e2;
-			background-image:url(https://drive.google.com/file/d/1xn8-NxHq9xmj2y0BpSmbWKizX5eL37-B/view?usp=sharing) ;
-			background-position: center;
-			background-repeat: no-repeat;
-			min-height: 100vh;
-			font-family: arial, sans-serif;
-		}
-		input, textarea {
-			display: block;
-			width: 300px;
-			font-size: 18px;
-			margin: 7px 0px;
-		}
-		label {
-			display: block;
-			padding: 2px 0px;
-		}
-	</style>
+	<meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width-devie-width, initial-scale=1"/>
+	<link rel="stylesheet" href="studbfinalcss.css"/>
+	<title>Student DB by KK</title>
+	<link rel="icon" href="https://projectabstracts.com/wp-content/uploads/2019/12/projectjpg.jpg"/>
 </head>
+
 <body>
-	
-	<h1><b><u>Student Database</u></b></h1>
+	<div class="headername">
+	<h1><b>Student Database</b></h1>
+	</div>
+
     <form method="POST" action="insert.php">
 
     	<label><b>Name:</b></label>
-    	<input type="text" 
-    	       name="name"
-    	       required>
+    	<input type="text" name="name" required>
     
     	<label><b>Email:</b></label>
-    	<input type='email'
-			   name='email'
-			   required>
+    	<input type='email' name='email' placeholder="abc@gmail.com" required>
         
         <p>
-		
-        <label><b>Gender:</b>    
-        <input type='radio'
-				name='gender' 
-				value='m'
-				required> 
-				<i>Male</i>
+		<label><b>Gender:</b>    
 
-        <input type='radio' 
-				name='gender' 
-				value='f'
-				required> 
-				<i>Female</i>
+        <input type='radio' name='gender' value='m' required> 
+		<i>Male</i>
+
+        <input type='radio' name='gender' value='f' required> 
+		<i>Female</i>
         </p>
 
         <label><b> Date Of Birth:</b></label>
-        <input type='date' 
-			   name='dob'
-			   value='date'
-			   required>
+        <input type='date' name='dob' value='date' required>
 
         <label> <b>Religion:</b> </label>
         <select name='religion'>
@@ -78,10 +50,7 @@
 
         <label for='mystate'> <b>Choose your State:</b></label>
 		
-        <input for='mystate' 
-			   placeholder="type here..."
-			   list='states' 
-			   required>
+        <input for='mystate' placeholder="type here..." list='states' required>
 			   
         <datalist id='states'>
         	<option value="Tamil Nadu">
@@ -112,18 +81,10 @@
         	<option value="Manipur">
         	<option value="Mizoram">
         	<option value="Orissa">
+		</datalist>
 
-        </datalist>
+    	<input class="finish" type="submit"  name="btn" value='Confirm'>
 
-
-
-    	<input type="submit"  
-    	       name="btn"
-    	       value='Confirm'>
-
-    	<input type="reset"  
-    	       name="btn1"
-    	       value='Reset'
-    	       >
+    	<input class="resetall" type="reset"  name="btn1" value='Reset'>
     </form>
 </body>
